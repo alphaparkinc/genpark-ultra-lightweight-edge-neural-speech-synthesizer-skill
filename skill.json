@@ -1,0 +1,41 @@
+{
+  "name": "genpark-ultra-lightweight-edge-neural-speech-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Ultra-lightweight 82M parameter edge neural speech synthesizer delivering natural broadcast-quality TTS at 20x real-time speed.",
+  "author": "genpark",
+  "category": "edge-tts",
+  "tags": [
+    "kokoro-tts",
+    "edge-tts",
+    "lightweight-speech",
+    "high-speed-audio",
+    "neural-tts"
+  ],
+  "inputs": {
+    "input_text": {
+      "type": "string"
+    },
+    "voice_style": {
+      "type": "string"
+    },
+    "output_format": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "tts_synthesis_id": {
+      "type": "string"
+    },
+    "realtime_factor_rtf": {
+      "type": "number"
+    },
+    "naturalness_mos_score": {
+      "type": "number"
+    },
+    "synthesized_audio_stream_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
